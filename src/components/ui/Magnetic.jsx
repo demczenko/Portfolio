@@ -37,9 +37,7 @@ const Magnetic = ({ children }) => {
       onMouseMove={handleMouse}
       onMouseLeave={reset}
       ref={ref}>
-      <div className="hover:h-32 hover:w-32 hover:bg-red-200 cursor-pointer flex items-center justify-center">
         {children}
-      </div>
     </motion.div>
   );
 };
