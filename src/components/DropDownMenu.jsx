@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const DropDownMenu = () => {
   return (
-    <DropdownMenuContent className="w-[180px]">
+    <DropdownMenuContent className="w-[180px] dark:bg-slate-800">
       <DropdownMenuLabel>Navigation</DropdownMenuLabel>
       <DropdownMenuSeparator />
       {children_navigation.map((item) => {
@@ -20,7 +20,7 @@ const DropDownMenu = () => {
             className="font-medium cursor-pointer rounded">
             <Link
               to={item.path}
-              className="flex justify-between items-center w-full group">
+              className="flex justify-between items-center w-full group dark:text-white">
               <span>{item.name}</span>
               <ArrowUpRight className="text-blue-300 group-hover:text-blue-500 h-4 w-4 group-hover:scale-105 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" />
             </Link>

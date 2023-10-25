@@ -6,7 +6,7 @@ import { Container } from "../components/ui";
 const Home = () => {
   return (
     <div>
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:bg-zinc-800">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:bg-slate-900/80">
         <Container>
           <Header />
         </Container>
