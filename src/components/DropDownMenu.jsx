@@ -7,7 +7,6 @@ import {
 } from "./ui/dropdown-menu";
 import { children_navigation } from "../router/router";
 import { Link } from "react-router-dom";
-import { Socials } from ".";
 import { socials } from "./Socials";
 
 const DropDownMenu = () => {
