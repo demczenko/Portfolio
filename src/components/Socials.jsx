@@ -7,19 +7,19 @@ export const socials = [
     id: 1,
     component: Youtube,
     name: "Youtube",
-    href: ""
+    href: "https://www.youtube.com/"
   },
   {
     id: 2,
     component: Linkedin,
     name: "Linkedin",
-    href: ""
+    href: "https://www.linkedin.com/"
   },
   {
     id: 3,
     component: Github,
     name: "Github",
-    href: ""
+    href: "https://github.com/"
   },
 ];
 
