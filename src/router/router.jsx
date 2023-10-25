@@ -2,6 +2,19 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About, Home, Portfolio } from "../pages";
 import { ThemeProvider } from "../components/Theme";
 
+export const children_navigation = [
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+    name: "Portfolio"
+  },
+  {
+    path: "/about",
+    element: <About />,
+    name: "About"
+  },
+];
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,16 +24,7 @@ const router = createBrowserRouter([
       </ThemeProvider>
     ),
     errorElement: <p>Error occured</p>,
-    children: [
-      {
-        path: "/portfolio",
-        element: <Portfolio />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-    ],
+    children: children_navigation,
   },
 ]);
 
